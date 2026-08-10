@@ -1,0 +1,19 @@
+{
+  "name": "hello-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Ballerina",
+  "buildpack": "docker",
+  "appPath": "hello-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "stories": [
+    1
+  ],
+  "dependencies": [],
+  "description": "A minimal, stateless service that exposes a single public endpoint returning a fixed \"Hello, World!\" greeting. It requires no authentication, accepts no input, and holds no data or persistence of any kind — it exists purely as a connectivity/reference check. It does not perform any business logic, does not call any other service, and does not expose any endpoint beyond the greeting.",
+  "skillsPinned": [
+    "openapi-conventions",
+    "ballerina"
+  ]
+}

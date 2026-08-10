@@ -1,0 +1,15 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "A caller can call an endpoint and receive a fixed \"Hello, World!\" greeting to confirm the API is reachable and working",
+      "stories": [1],
+      "criteria": [
+        { "id": "AC-001-a", "must": "Calling the endpoint without any credentials succeeds (no authentication is required)", "method": "e2e" },
+        { "id": "AC-001-b", "must": "The response returns HTTP 200 on success", "method": "e2e" },
+        { "id": "AC-001-c", "must": "The response body contains the exact greeting message \"Hello, World!\"", "method": "e2e" },
+        { "id": "AC-001-d", "must": "The response content is identical regardless of any request input or parameters supplied", "method": "e2e" }
+      ]
+    }
+  ]
+}
